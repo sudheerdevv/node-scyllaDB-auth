@@ -84,7 +84,7 @@ router.post("/refresh-token", (req, res) => {
 });
 
 const generateAccessToken = (user) => {
-  return jwt.sign(user, process.env.SECRET_TOKEN, { expiresIn: "5m" });
+  return jwt.sign(user, process.env.SECRET_TOKEN, { expiresIn: "40m" });
 };
 
 module.exports = router;
