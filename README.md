@@ -33,7 +33,7 @@ You can use docker to run Redis. Used Redis to cache the fetched data. Execute t
 Go into Redis
 
 ```bash
-   docker exec -it <container_name> cqlsh
+   docker exec -it <container_name> redis-cli
 ```
 
 ## Installation
